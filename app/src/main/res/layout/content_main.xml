@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="co.week.sw.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:fillColor="#FFFFFFFF"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp"/>
+
+
+
+    <ImageView
+        android:id="@+id/tech"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:src="@drawable/category_3"
+        android:background="@android:color/holo_green_light"
+        android:layout_below="@+id/carouselView"/>
+
+    <ImageView
+        android:id="@+id/food"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:src="@drawable/category_1"
+        android:layout_below="@+id/tech"
+        android:background="@android:color/holo_green_light"/>
+
+    <ImageView
+        android:id="@+id/clothes"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:src="@drawable/category_2"
+        android:layout_below="@+id/food"
+        android:background="@android:color/holo_green_light"/>
+
+</RelativeLayout>
